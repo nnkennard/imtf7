@@ -1,7 +1,6 @@
 ---
 title: Black Forest Cake
 author: Karen
-layout: imtf
 section: bombay
 category: cakes
 ---

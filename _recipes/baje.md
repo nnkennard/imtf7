@@ -1,7 +1,6 @@
 ---
 title: Baje
 author: Karen
-layout: imtf
 section: udupi
 category: snacks
 ---

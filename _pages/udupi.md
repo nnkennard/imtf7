@@ -1,7 +1,6 @@
 ---
 title: Udupi Favourites
 author: Karen
-layout: imtf
 ---
 
 {% for bcat in site.udupi_categories %}

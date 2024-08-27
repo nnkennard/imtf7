@@ -1,7 +1,6 @@
 ---
 title: Appo savoury
 author: Karen
-layout: imtf
 section: udupi
 category: breakfast
 ---

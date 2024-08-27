@@ -1,7 +1,6 @@
 ---
 title: Carrot Cake
 author: Karen
-layout: imtf
 section: bombay
 category: cakes
 ---

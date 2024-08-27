@@ -1,7 +1,6 @@
 ---
 title: Aloo paratha
 author: Karen
-layout: imtf
 section: udupi
 category: breakfast
 ---

@@ -1,6 +1,5 @@
 ---
 title: I miss that food!
-layout: imtf
 ---
 
 <h1 class="subtitle is-2">Has this ever happened to you?</h1>

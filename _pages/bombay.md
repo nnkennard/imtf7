@@ -1,7 +1,6 @@
 ---
 title: Bombay Favourites
 author: Karen
-layout: imtf
 ---
 
 {% for bcat in site.bombay_categories %}
