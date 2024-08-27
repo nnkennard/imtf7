@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>I Miss That Food!</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="/assets/css/imtf.css">
 
 </head>
-<body>
 
 {% include navbar.html %}
+
 <div class='columns'>
-    <div class='column is-10 is-offset-1 has-background-white'>
-	<br/>
+  <div class='column is-one-quarter pr-0 pt-6 pl-6 has-text-centered'>
+  <img src="/assets/bawarchi_namaste.gif" /> <br/>
+  </div>
+  <div class='column is-three-quarters p-6'>
+    <div class='card p-6'>
 	<p class="title is-1"> {{ page.title }} </p>
 	<br/>
-	<div class='content'>
+      <div class="content">
+        
 	{{ content }}
-      	</div>
+
+      </div>
     </div>
   </div>
+</div>
 
 </body>
 
