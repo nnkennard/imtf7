@@ -41,6 +41,27 @@ collections:
   pages:
     output: true
 
+bombay_categories:
+  barbecue: "Barbecue"
+  cakes: "Cakes"
+  chaat: "Chaat"
+  christmas: "Christmas sweets"
+  desserts: "Desserts"
+  rice: "Rice dishes"
+  nonveg: "Non vegetarian"
+  snacks: "Snacks"
+  specials: "Specials"
+  vegetarian: "Vegetarian"
+
+udupi_categories:
+  breakfast: "Breakfast dishes"
+  snacks: "Snacks"
+  saars: "Saars"
+  dry: "Dry dishes"
+  salads: "Salads"
+  drinks: "Drinks"
+  sweets: "Sweets"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

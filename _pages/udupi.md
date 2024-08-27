@@ -1,15 +1,15 @@
 ---
-title: Bombay Favourites
+title: Udupi Favourites
 author: Karen
 layout: imtf
 ---
 
-{% for bcat in site.bombay_categories %}
-   <section class='section' id="bcat[1]">
+{% for bcat in site.udupi_categories %}
+   <section class='section'>
       <h2 class="title"> {{ bcat[1] }} </h2>
          <div class='grid'>
             {% for recipe in site.recipes %}
-               {% if recipe.section == 'bombay' and recipe.category == bcat[0] %}
+               {% if recipe.section == "udupi" and recipe.category == bcat[0] %}
                   <div class="cell">
                      <a href="{{ recipe.url }}"> {{ recipe.title }}</a>
                   </div>

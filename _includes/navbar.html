@@ -1,42 +1,31 @@
 <nav class="navbar has-background-light" role="navigation" aria-label="main navigation">
    <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-         <a class="navbar-item">
+         <a class="navbar-item" href="/">
          Home
          </a>
          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href='pages/bombay'>
+            <a class="navbar-link" href='/pages/bombay'>
             Bombay favourites
             </a>
             <div class="navbar-dropdown">
-               <a class="navbar-item">
-               Barbecue
+               {% for bcat in site.bombay_categories %}
+               <a class="navbar-item" href="/pages/bombay#{{ bcat[0]}}">
+               {{ bcat[1] }}
                </a>
-               <a class="navbar-item">
-               Cakes
-               </a>
-               <a class="navbar-item">
-               Chaat
-               </a>
-               <a class="navbar-item">
-               Christmas sweets
-               </a>
+               {% endfor %}
             </div>
          </div>
          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
+            <a class="navbar-link" href='/pages/udupi'>
             Udupi favourites
             </a>
             <div class="navbar-dropdown">
-               <a class="navbar-item">
-               Breakfast dishes
+               {% for bcat in site.udupi_categories %}
+               <a class="navbar-item" href="/pages/udupi#{{ bcat[0]}}">
+               {{ bcat[1] }}
                </a>
-               <a class="navbar-item">
-               Snacks
-               </a>
-               <a class="navbar-item">
-               Saars
-               </a>
+               {% endfor %}
             </div>
          </div>
       </div>
