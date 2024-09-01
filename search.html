@@ -1,0 +1,23 @@
+---
+title: Search I miss that food
+author: Karen
+---
+
+<input class="input" type="text" id='search_input' placeholder="e.g. Boti kebab" /> <button class="button" id='search_btn' onclick="imtf_search()">Search</button>
+
+Sorry, you have to click the Search button! I am not that good at web design - Neha
+<script>
+
+fetch("/assets/js/recipe-data-builder.json")
+                .then((res) => {
+                    if (!res.ok) {
+                        throw new Error
+                            (`HTTP error! Status: ${res.status}`);
+                    }
+                    return res.text();
+                })
+                .then((data) => 
+                      console.log(data))
+                .catch((error) => 
+                       console.error("Unable to fetch data:", error));
+</script>

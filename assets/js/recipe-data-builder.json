@@ -1,0 +1,12 @@
+---
+layout: null
+---
+
+{ "posts": [{% for post in site.recipes %}
+    {
+      "title": "{{ post.title }}",
+      "url": "{{ post.url }}",
+      "excerpt": "{{ post.content | strip_html | strip_newlines | escape }}",
+    } {% if post != site.posts.last %}, {% endif %} {% endfor %} ],
+
+}
