@@ -8,16 +8,22 @@ author: Karen
 Sorry, you have to click the Search button! I am not that good at web design - Neha
 <script>
 
+function fuse_search(data){
+    //console.log(data);
+}
+
+function imtf_search(){
 fetch("/assets/js/recipe-data-builder.json")
-                .then((res) => {
-                    if (!res.ok) {
-                        throw new Error
-                            (`HTTP error! Status: ${res.status}`);
-                    }
-                    return res.text();
-                })
-                .then((data) => 
-                      console.log(data))
-                .catch((error) => 
-                       console.error("Unable to fetch data:", error));
+    .then((res) => {
+        if (!res.ok) {
+            throw new Error(`HTTP error! Status: ${res.status}`);
+        }
+        return res.text();
+    })
+    .then((data) =>{
+        console.log(data);
+        fuse_search(data)})
+    .catch((error) =>
+        console.error("Unable to fetch data:", error));
+}
 </script>
